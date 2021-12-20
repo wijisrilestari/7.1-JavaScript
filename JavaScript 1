@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Javascript Motor</title> 
+  <style>
+    #tempataGambarMotor {
+
+    }
+  </style> 
+ </head> 
+ <body> 
+  <h1 id="namaMotor"></h1> <button id="printGambarMotor" onclick="tampilkanGambar()"></button> 
+  <div id="tempatGambarMotor"></div> <button onclick="klakson()">Klakson</button> 
+  <p id="bunyiKlakson">....</p> 
+  <script>
+    document.getElementById('namaMotor').innerText = 'Beat';
+    document.getElementById('printGambarMotor').innerText = 'Print Gambar Motor';
+    
+    function klakson() {
+        document.getElementById('bunyiKlakson').innerHTML = 'tin tin tin';
+    }
+
+    // Deklarasi
+    function tampilkanGambar() {
+      // isi
+      document.getElementById('tempatGambarMotor').innerHTML = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtog0ulhLaDab8V9Qf5rAgK43irIfjX032hA&usqp=CAU">';
+    }
+
+  </script> 
+ </body>
+</html>
